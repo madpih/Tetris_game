@@ -101,14 +101,6 @@ function moveDown(){
     freeze()
 }
 
-function isGameOver() {
-  if (gameOver())
-  currentPosition = 0
-  nextRandom = 0
-  return
-}
-
-
 // freeze function
   function freeze() {
     if(current.some(index =>squares[currentPosition + index + width].classList.contains('taken'))){
